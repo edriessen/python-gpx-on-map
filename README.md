@@ -3,7 +3,9 @@ This repository offers users an easy way to generate a themed route plot based o
 
 To do so, it combines good-old Matplotlib for visualising the data and the Mapbox Static Images API to generate relevant background maps.
 
-![python gpx map repo promo](C:\github\python-gpx-on-map\images\python-gpx-map-repo-promo.png)
+![python gpx map repo promo](images/python-gpx-map-repo-promo.png)
+
+*This repo has been tested with Garmin GPX data. If you run into any issues, please*
 
 ## 0. Requirements
 
@@ -40,7 +42,7 @@ gpx_map.plot_gpx_on_map('sample.gpx', 'SNØHETTA')
 
 This results in the following image:
 
-![snohette hike](C:\github\python-gpx-on-map\images\snohetta.jpg)
+![snohette hike](images/snohetta.jpg)
 
 You can also modify some of the matplotlib settings, like colours and image size. 
 
@@ -67,7 +69,7 @@ gpx_map.plot_gpx_on_map('ragocircuit.gpx', 'THE RAGO CIRCUIT')
 
 This example, if you have the gpx file of course, results into this plot:
 
-![rago circtuit hike](C:\github\python-gpx-on-map\images\ragocircuit.jpg)
+![rago circtuit hike](images/ragocircuit.jpg)
 
 Ah, The Rago Circuit is such a nice hike! :-)
 
@@ -86,7 +88,7 @@ gpx_map.plot_gpx_on_map('tilburgtenmiles.gpx', 'TILBURG TEN MILES')
 
 Here's the example of a running event I attended in my city:
 
-![tilburg ten miles 2023 map](C:\github\python-gpx-on-map\images\tilburgtenmiles.jpg)
+![tilburg ten miles 2023 map](images/tilburgtenmiles.jpg)
 
 ## Credits
 
