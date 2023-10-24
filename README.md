@@ -26,6 +26,24 @@ gpx_map.plot_gpx_on_map(
 )
 ``````
 
+Your plot will use the following settings by default:
+
+```
+fig_size = (12,14)
+background_image_width = 600
+background_image_height = 700
+route_margin = .1
+
+background_image_name = 'plot_background.jpg'
+output_file_name = 'gpx_on_map.jpg'
+
+mapbox_style = 'mapbox/light-v11'
+theme_primary_color = '#F14F54'
+theme_secondary_color = '#444444'
+```
+
+Read ahead if you want to change these settings. 
+
 ## 2. Optional settings
 
 There are some settings that you can change to make it fit your use-case.
