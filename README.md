@@ -1,28 +1,29 @@
-# Plot a GPX rout on map
+# Plot a GPX route on a map with Matplotlib and Mapbox
 This repository offers users an easy way to generate a themed route plot based on GPX data. 
 
 To do so, it combines good-old Matplotlib for visualising the data and the Mapbox Static Images API to generate relevant background maps.
 
 ![python gpx map repo promo](images/python-gpx-map-repo-promo.png)
 
-*This repo has been tested with Garmin GPX data. If you run into any issues, please*
-
 ## 0. Requirements
 
 To plot a route on a map, you need a `mapbox_access_token` to connect to the Mapbox Static Images API ([more info](https://docs.mapbox.com/api/maps/static-images/)).
 
-Besides that, you (of course) need install the required python packages. 
+Besides that, you (of course) need to install the required python packages. 
 
 After that, you are good to go. 
 
 ## 1. Basic usage
 
-Plotting a route on a map is really easy:
+Plotting a route on a map is easy:
 
 ``````python
 gpx_map = GpxOnMap()
 gpx_map.mapbox_access_token = your_mapbox_access_token
-gpx_map.plot_gpx_on_map('sample.gpx', 'SNØHETTA')
+gpx_map.plot_gpx_on_map(
+    path_to_gpx='snohetta.gpx',
+    route_title='SNØHETTA',
+)
 ``````
 
 ## 2. Optional settings
@@ -37,18 +38,23 @@ For example, you can specify where to save the image and change the Mapbox theme
 ...
 gpx_map.output_file_name = 'images/snohetta.jpg'
 gpx_map.mapbox_style = 'edriessen/clnymoa2t005101qx2du81zcr'
-gpx_map.plot_gpx_on_map('sample.gpx', 'SNØHETTA')
+gpx_map.plot_gpx_on_map(
+    path_to_gpx='snohetta.gpx',
+    route_title='SNØHETTA',
+)
 ``````
 
 This results in the following image:
 
 ![snohette hike](images/snohetta.jpg)
 
-You can also modify some of the matplotlib settings, like colours and image size. 
-
 ### 2.2 Changing the output image size
 
-To change the image size, make sure that the aspect ratio of the background image (`background_image_width` and `background_image_height`) match the figsize of the plot (`(width, height)`). By default, these are set to:
+You can also modify some of the matplotlib settings, like colours and image size. 
+
+To change the image size, make sure that the aspect ratio of the background image (`background_image_width` and `background_image_height`) match the aspect ratio of the figsize of the plot (`(width, height)`). 
+
+By default, these are set to:
 
 - `background_image_width`: 600
 - `background_image_width`: 700
@@ -95,7 +101,7 @@ Here's the example of a running event I attended in my city:
 Many thanks to:
 
 - [Mapbox](https://www.mapbox.com/) for providing an intuitive way to style and use custom maps.
-- Andrew Lavers for providing [a Python function to calculate haversine distances between points on our globe](https://stackoverflow.com/questions/53697724/getting-distance-from-longitude-and-latitude-using-haversines-distance-formula). 
+- [Andrew Lavers](https://stackoverflow.com/questions/53697724/getting-distance-from-longitude-and-latitude-using-haversines-distance-formula) for providing a Python function to calculate haversine distances between points on our globe. 
 - [Garmin](https://www.garmin.com/nl-NL/) for providing an easy way to track my hikes and runs.  
 
 ## Contact
