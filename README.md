@@ -103,6 +103,7 @@ Many thanks to:
 - [Mapbox](https://www.mapbox.com/) for providing an intuitive way to style and use custom maps.
 - [Andrew Lavers](https://stackoverflow.com/questions/53697724/getting-distance-from-longitude-and-latitude-using-haversines-distance-formula) for providing a Python function to calculate haversine distances between points on our globe. 
 - [Garmin](https://www.garmin.com/nl-NL/) for providing an easy way to track my hikes and runs.  
+- [Matplotlib](https://matplotlib.org/) for being an awesome dataviz package. 
 
 ## Contact
 
