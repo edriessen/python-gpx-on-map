@@ -126,3 +126,7 @@ Many thanks to:
 ## Contact
 
 Don't hesitate to reach out if you have any questions or suggestions!
+
+## Support
+
+Do you like this repo? You can help me spend more time on git repos by buying me a coffee or some data art from my store. [Find out how](https://www.edriessen.com/support/).
